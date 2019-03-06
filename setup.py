@@ -6,9 +6,9 @@ from setuptools import setup, find_packages
 import os
 
 
-dirname = os.path.dirname(os.path.realpath(__file__))
-with open(os.path.join(dirname, 'README.md')) as f:
-    long_description = f.read()
+#dirname = os.path.dirname(os.path.realpath(__file__))
+#with open(os.path.join(dirname, 'README.md')) as f:
+#    long_description = f.read()
 
 
 requirements = ['numpy', 'tfquaternion', 'pillow']
@@ -24,7 +24,7 @@ setup(
     name='SpatialRelationCNN',
     version='0.1',
     description="Generalize Spatial Relations using a WeightSharing CNN.",
-    long_description=long_description,
+    long_description='',
     url='',
 
     author='Philipp Jund',

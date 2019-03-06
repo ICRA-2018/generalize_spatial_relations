@@ -1,0 +1,14 @@
+name: generalize-spatial-relations
+
+base:
+  ubuntu: 16.04
+  cuda: 9.0-devel
+  cudnn: 7-devel
+
+apt:
+  - python-setuptools
+  - python-dev
+
+custom:
+  - cd $HOME/generalize-spatial-relations
+  - pip install -e .
