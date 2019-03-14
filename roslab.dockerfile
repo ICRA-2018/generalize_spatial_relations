@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM nvidia/opengl:1.0-glvnd-runtime-ubuntu16.04
 
 ################################## JUPYTERLAB ##################################
 
@@ -107,6 +107,8 @@ RUN apt-get -o Acquire::ForceIPv4=true update \
  && apt-get -o Acquire::ForceIPv4=true install -yq --no-install-recommends \
     python-setuptools \
     python-dev \
+    libpcl1.7 \
+    pcl-tools \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 

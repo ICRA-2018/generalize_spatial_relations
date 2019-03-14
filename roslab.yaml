@@ -4,10 +4,13 @@ base:
   ubuntu: 16.04
   cuda: 9.0-devel
   cudnn: 7-devel
+  opengl: runtime
 
 apt:
   - python-setuptools
   - python-dev
+  - libpcl1.7
+  - pcl-tools
 
 custom:
   - cd $HOME/generalize-spatial-relations

@@ -18,4 +18,4 @@ docker run --rm \
     --env="XAUTHORITY=$XAUTH" \
     --volume="$XAUTH:$XAUTH" \
     --runtime=nvidia \
-     -p 8888:8888 generalize-spatial-relations
+      -p 8888:8888 generalize-spatial-relations
